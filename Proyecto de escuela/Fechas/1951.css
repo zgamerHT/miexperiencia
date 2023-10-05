@@ -1,0 +1,58 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #021024, #052659);
+    color: #C1E8FF;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Estilo para la fecha */
+.fecha {
+    display: block;
+    font-size: 36px;
+    text-decoration: none;
+    color: #7DA0CA;
+    margin-bottom: 10px;
+}
+
+/* Estilo para la imagen */
+.imagen {
+    width: 300px; /* Tamaño que desees */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Estilo para el título */
+.titulo {
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+/* Estilo para la descripción */
+.descripcion {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Estilo para el enlace "Volver atrás" */
+a {
+    color: #5483B3;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

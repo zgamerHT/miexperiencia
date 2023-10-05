@@ -1,0 +1,77 @@
+body {
+    font-family: 'ExtraOrnamentalNo2', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, 
+        #06141B,
+        #11212D,
+        #253745,
+        #4A5C6A,
+        #9Ba8AB,
+        #CCD0CF
+    );
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.fecha {
+    text-decoration: none;
+    font-size: 50px;
+    margin: 0 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative; /* Agregamos una posición relativa */
+    color: #CCD0CF; /* Cambiamos el color del texto a blanco */
+}
+
+.fecha:hover {
+    font-size: 100px;
+    color: #fff;
+}
+
+/* Agregamos el estilo para el efecto de ondas */
+.fecha::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #4A5C6A; /* Cambia el color de las ondas según tus preferencias */
+    border-radius: 50%;
+    z-index: -1;
+    animation: ripple 2s linear infinite;
+    opacity: 0;
+    background: linear-gradient(45deg, #11212D, #4A5C6A); /* Cambiamos a un gradiente diagonal */
+  
+  
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* Estilos para fechas visitadas */
+.visited {
+    color: #999; /* Cambia el color para indicar que se ha visitado */
+}
+
+.fecha:hover::before,
+.visited::before {
+    animation: none; /* Detiene la animación cuando se pasa el mouse o en fechas visitadas */
+    opacity: 0; /* Oculta el círculo cuando se pasa el mouse o en fechas visitadas */
+}
+
+
