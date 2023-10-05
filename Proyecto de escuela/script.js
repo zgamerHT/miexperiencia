@@ -39,9 +39,9 @@ fechas.forEach(fecha => {
         marcarComoVisitada(fecha);
         this.classList.add('visited');
 
-        // Redirigir después de un breve retraso (puedes ajustar el tiempo en milisegundos)
+        // Redirigir después de un retraso 
         setTimeout(() => {
             window.location.href = href;
-        }, 50); // Redirección después de 1 segundo (1000 ms)
+        }, 50);
     });
 });
