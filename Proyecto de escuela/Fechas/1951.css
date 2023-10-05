@@ -27,7 +27,7 @@ body {
 
 /* Estilo para la imagen */
 .imagen {
-    width: 300px; /* Tamaño que desees */
+    width: 300px;
     height: auto;
     margin: 0 auto;
     display: block;
